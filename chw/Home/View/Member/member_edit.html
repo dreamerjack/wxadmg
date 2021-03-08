@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>满分爱小程序管理系统</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/themes/icon.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/index.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/adduser.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.easyui.min.js"></script>
+
+  <script type="text/javascript">
+  
+    function test(){
+
+       if(document.getElementById('spot-n').value==""){
+        alert('用户名不能为空');
+        return false;
+      }
+
+       if(document.getElementById('spot-url').value==""){
+        alert('密码不能为空');
+        return false;
+      }
+
+
+
+}
+
+
+  </script>
+
+
+
+</head>
+<body  >   
+	
+
+<div class="add-title">用户基本信息</div>
+
+       <div class="add-ctn">
+         <form action="" method="POST" enctype="multipart/form-data" onsubmit="return test()";>
+
+
+          <div class="content"  >
+             <input type="hidden" name="planid" value="{$spledit.id}">
+
+          用户名: <input    type="text" id="spot-n" name="mbername"  autocomplete="off"  value="{$spledit.username}" >
+</div>
+
+ 
+<div class="content">
+          密码: <input type="password" id="spot-url"  name="mberpwd"    >
+</div> 
+
+
+
+
+
+
+
+<div class="content content-btn"><input class="btn" type="submit" name="" value="提交修改"></div>
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+</div>
+        
+      
+</body>  
+</html>

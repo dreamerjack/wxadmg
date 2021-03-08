@@ -1,0 +1,38 @@
+.cart{
+	border:1px solid green;
+}
+
+.cart .cart-u{
+	border:1px solid #000;
+	overflow:hidden;
+
+}
+
+.cart-list{
+	list-style:none;
+	float:left;
+	margin:5px 15px;
+	line-height:25px;
+	border:1px solid blue;
+}
+
+.cart-list a{
+	display:block;
+	padding:3px 5px;
+	background-color:#A6E22E;
+	border:1px solid green;
+	color:#000;
+	text-decoration: none;
+}
+
+
+.ctn{
+border:1px solid red;
+}
+
+#ptn{
+	width:500px;
+	height:200px;
+	background-color:red;
+	border:1px solid green;
+}

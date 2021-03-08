@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>加粉管理系统</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/themes/icon.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/index.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/adduser.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.easyui.min.js"></script>
+  <script type="text/javascript">
+  
+      function test(){
+
+        if(document.getElementById('content-name').value==""){
+        alert("管理员账号不能为空");
+        return false;
+   }
+   if(document.getElementById('content-pwd').value.length<6){
+
+    alert('管理员密码不能少于六位');
+       return false;
+   }
+   return true;
+
+    }
+    
+  </script>
+
+
+
+
+  
+
+</head>
+<body>   
+	
+
+<div class="add-title">管理员基本信息</div>
+
+       <div class="add-ctn">
+         <form  action="{:U('home/admin/adduser')}" id="form" method="POST" enctype="multipart/form-data" onsubmit="return test();">
+<div class="content">
+          管理员账号: <input id="content-name" type="text" name="username">
+</div>
+       <div class="content">
+          管理员密码: <input id="content-pwd" type="password" name="pwd"  readonly    onfocus="this.removeAttribute('readonly')"   >
+        </div>
+
+        <div class="content">
+          管理员类型: <select name="rights" id="rights">
+
+                  <option value="普通管理员"> 普通管理员</option>
+           
+                  <option value="超级管理员">超级管理员</option>
+
+                </select>
+                
+              </div>
+
+              <div class="content content-btn"><input class="btn" type="submit" name="" value="创建管理员" ></div>
+        </form>
+
+
+
+       </div>
+        
+      
+</body>  
+</html>

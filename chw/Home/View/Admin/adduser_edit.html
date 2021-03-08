@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>加粉管理系统</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/themes/icon.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/index.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/adduser.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.easyui.min.js"></script>
+  <script type="text/javascript">
+    function edittest(){
+      if(document.getElementById('content-name').value==''){
+        alert('管理员账号不能为空');
+        return false
+      }
+      if(document.getElementById('content-pwd').value.length<6){
+     alert('管理员密码不能少于6位');
+     return false
+      }
+      if(document.getElementById('content-name').value=='{$edit.username}'&&document.getElementById('content-pwd').value=='{$edit.pwd}'&&document.getElementById('content-rights').value=='{$edit.rights}'){
+                alert('用户信息未做更改，无须修改');
+        return false 
+
+      }
+        return true
+    }
+     
+    document.getElementById('content-rights').value=='{$edit.rights}'
+
+  </script>
+</head>
+<body>   
+	
+<div class="add-title">管理员基本信息</div>
+
+       <div class="add-ctn">
+         
+         <form   action="{:U(home/admin/adduser_edit)}" method="POST" onsubmit="return edittest();">
+            
+<div class="content">
+  <input type="hidden" name="id" value='{$edit.id}'>
+          管理员账号: <input type="text" id="content-name" name="username" value='{$edit.username}'>
+</div>
+       <div class="content">
+          管理员密码: <input type="password" id="content-pwd" name="pwd"  readonly    onfocus="this.removeAttribute('readonly')"   value='{$edit.pwd}'>
+        </div>
+        <div class="content">
+          管理员类型: <select name="rights" id="content-rights"  >
+                  <option value='{$edit.rights}' selected="selected" >{$edit.rights}</option>
+                  <option value="普通管理员">普通管理员</option>
+                  <option value="超级管理员">超级管理员</option>
+                </select>
+              </div>
+              <div class="content content-btn"><input class="btn" type="submit" name="" value="提交修改"></div>
+        </form>
+
+
+
+       </div>
+        
+      
+    </div>   
+</body>  
+</html>

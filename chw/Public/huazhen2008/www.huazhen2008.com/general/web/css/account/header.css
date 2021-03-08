@@ -1,0 +1,90 @@
+.main{background:#f0f0f0;padding: 30px 0;}
+.public_header2 { width: 100%; margin: 0 auto; /*height: 113px;*/ background: #fff; border-bottom: 8px solid #ff535f; position: relative; height: 82px;}
+.header_con2 { width: 1200px; height: 82px; margin: 0 auto;}
+.header_con2 .logo {float: left;}
+.header_con2 .logo img {display: block; margin-top: 9px;}
+.header_con2 .nav {float: right;}
+.header_con2 .nav .list {position: relative; float: left; /*width: 125px;*/ height: 82px; text-align: center; line-height: 82px; font-size: 18px; margin-left: 48px; color: #323232;}
+.header_con2 .nav .list img{ vertical-align: middle;}
+.header_con2 .nav .list .tx{ width:25px; height: 25px; overflow: hidden; border-radius: 100%; }
+
+.fixed{ width:42px; height: 100%; position: fixed; right:0; top:0; background: #000; z-index: 5;}
+.fixed_in{ border-top: 1px solid #434343; margin-top: 100px; padding-top: 10px; border-bottom: 1px solid #434343; font-size: 12px;}
+.fixed_in a{text-align: center; color:#fff; width:23px; display: block; margin:0 auto; margin-bottom: 17px; padding-top: 25px;}
+.fixed_in a.ago{ background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/4.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/4.png*/) no-repeat center top;}
+.fixed_in a.after{ background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/5.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/5.png*/) no-repeat center top;}
+.fixed_in a.wx{ background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/6.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/6.png*/) no-repeat center top; position: relative;}
+.fixed_in a.wx .ewm{ position: absolute; left:-130px; top:20px; display: none;}
+.fixed_in span{  display: block; height: 60px; width:45px; background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/8.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/8.png*/) no-repeat center; border-top:1px solid #424242; cursor: pointer;}
+.menu{ font-size:12px;width:1200px; border-bottom:1px solid #eaeaea; height: 45px; line-height: 45px; color:#999;}
+.menu a{ color:#999;}
+
+.site_container{width: 100%;position: relative;background: #f0f0f0;}
+.site_container .container_inner{ margin: 0 auto;padding-left: 200px;width: 1000px;position: relative;}
+.site_container .container_inner .user_navigate{width: 224px;background: #F9F9F9;border: 1px solid #e8e8e8;position: absolute;left: 0;top: 0;bottom: 0;}
+.site_container .container_inner .main_content{padding: 20px 0 0 25px;background: #fff;border-radius: 2px;border: 1px solid #e8e8e8;border-left: 0 none;min-height: 705px;}
+
+.site_container .container_inner .user_navigate .user_img img{border-radius: 50%;}
+.site_container .container_inner .user_navigate .user_img {cursor:pointer;display: inline-block;zoom: 1; width: 114px;height: 114px; margin:16px 6px 16px 59px; position: relative;vertical-align: middle;}
+.site_container .container_inner .user_navigate .user_img i{display: inline-block;height: 25px;width: 25px;background:url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_05.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_05.png*/)no-repeat center;position: absolute;bottom: 0;right: 0;}
+.site_container .container_inner .user_navigate .user_img i.vip{display: inline-block;height: 25px;width: 25px;background:url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_06.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_06.png*/)no-repeat center;position: absolute;bottom: 0;right: 0;}
+.site_container .container_inner .user_navigate .user_info{text-align: center}
+.site_container .container_inner .user_navigate .user_ming{font-size: 18px;color: #323232;margin-bottom: 16px}
+.site_container .container_inner .user_navigate .user_kt a{color: #3a7bb8; font-size: 14px;}
+.site_container .container_inner .user_navigate .user_kt a.vip{color: #d0a42e}
+.site_container .container_inner .user_navigate .navigate_list{background:#fff;text-align: center;margin-top: 15px}
+.site_container .container_inner .user_navigate .navigate_list li{position: relative;cursor:pointer;height: 40px;line-height: 40px; font-size: 14px;}
+.site_container .container_inner .user_navigate .navigate_list li a{padding-left: 30px}
+.site_container .container_inner .user_navigate .navigate_list li.one{background: #f5f5f5}
+.site_container .container_inner .user_navigate .navigate_list li.one a{color:#ff5562;background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_04.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_04.png*/) no-repeat left;}
+.site_container .container_inner .user_navigate .navigate_list li.two a{background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_08.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_08.png*/) no-repeat left;}
+.site_container .container_inner .user_navigate .navigate_list li.three a{background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_09.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_09.png*/) no-repeat left;}
+.site_container .container_inner .user_navigate .navigate_list li.four a{background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_11.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_11.png*/) no-repeat left;}
+.site_container .container_inner .user_navigate .navigate_list li.five a{background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_13.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_13.png*/) no-repeat left;}
+.site_container .container_inner .user_navigate .navigate_list li.six a{background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_15.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_15.png*/) no-repeat left;}
+
+.site_container .container_inner .user_navigate .navigate_list li.two.on{background:#ff5562;}
+.site_container .container_inner .user_navigate .navigate_list li.three.on{background:#ff5562;}
+.site_container .container_inner .user_navigate .navigate_list li.four.on{background:#ff5562;}
+.site_container .container_inner .user_navigate .navigate_list li.five.on{background:#ff5562;}
+.site_container .container_inner .user_navigate .navigate_list li.six.on{background:#ff5562;}
+
+.site_container .container_inner .user_navigate .navigate_list li.two a.on{color:#fff;background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_07.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_07.png*/) no-repeat left;}
+.site_container .container_inner .user_navigate .navigate_list li.three a.on{color:#fff;background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_10.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_10.png*/) no-repeat left;}
+.site_container .container_inner .user_navigate .navigate_list li.four a.on{color:#fff;background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_12.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_12.png*/) no-repeat left;}
+.site_container .container_inner .user_navigate .navigate_list li.five a.on{color:#fff;background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_14.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_14.png*/) no-repeat left;}
+.site_container .container_inner .user_navigate .navigate_list li.six a.on{color:#fff;background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_16.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_16.png*/) no-repeat left;}
+
+.site_container .container_inner .user_navigate .navigate_list li.six i{line-height:normal;background:#ff5562;border-radius:50%;position:absolute;top:12px;right:38px;font-size: 13px;color:#fff;display: inline-block;width: 18px;height: 18px;}
+
+.user-card {display:none;border-radius:8px;border: 1px solid #cccccc;box-shadow: 0 0 15px #ccc;text-align: start; position: absolute;top: 68px;left: -230px;width: 300px;z-index: 9;background: #fff}
+.user-card .quick_pop_user{line-height: 26px;white-space: nowrap;margin: 10px 15px; padding-bottom: 10px;border-bottom: 1px dotted #cfcfcf;font-size: 14px;color: #999;}
+.user-card .quick_pop_user .user_name{display: inline-block;zoom: 1;max-width: 124px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;padding-right: 6px;vertical-align: top;}
+.user-card .quick_pop_user .link_quit{display: inline-block;float: right;}
+.user-card .quick_pop_user .link_quit a{color: #999}
+.user-card .quick_pop_lis{overflow: hidden;margin:20px 10px ;}
+.user-card .quick_pop_lis ul li{cursor: pointer;float: left;width: 33.3333%;text-align: center;line-height: normal;padding-top: 30px;font-size: 16px}
+.user-card .quick_pop_lis .one{background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_21.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_21.png*/) no-repeat top;}
+.user-card .quick_pop_lis .two{background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_22.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_22.png*/) no-repeat top;}
+.user-card .quick_pop_lis .three{background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_23.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/icon/icon_23.png*/) no-repeat top;}
+.user-card .triangle_up{position: absolute;top:-7px;right:50px;background: url("../../../../../huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/img_05.png"/*tpa=http://huazhen-poster.oss-cn-hangzhou.aliyuncs.com/backend/img/img_05.png*/) no-repeat center;width: 12px;height: 12px;display: inline-block}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

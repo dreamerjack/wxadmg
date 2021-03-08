@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>注册</title>
+	<link rel="stylesheet" href="__PUBLIC__/style/css/login.css">
+
+       <link rel="stylesheet" href="__PUBLIC__/huazhen2008/www.huazhen2008.com/general/web/css/account/reset.css">
+        <link rel="stylesheet" href="__PUBLIC__/huazhen2008/www.huazhen2008.com/general/web/css/account/header.css">
+        <link rel="stylesheet" href="__PUBLIC__/huazhen2008/www.huazhen2008.com/general/web/css/account/footer.css">
+        <link rel="stylesheet" href="__PUBLIC__/huazhen2008/www.huazhen2008.com/general/web/css/public/swiper-3.3.1.min.css">
+        <link rel="stylesheet" href="__PUBLIC__/huazhen2008/www.huazhen2008.com/general/web/css/account/public.css">
+        <link rel="stylesheet" href="__PUBLIC__/huazhen2008/www.huazhen2008.com/general/web/css/account/login.css">
+
+
+	<script type="text/javascript">
+		
+      function test(){
+
+        if(document.getElementById('content-name').value==""){
+        alert("用户名不能为空");
+        return false;
+   }
+/*
+var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
+var phone=document.getElementById('IPhone').value;
+
+if (!myreg.test(phone)) {
+
+    alert("请输入有效手机号");
+                return false;
+
+            } */
+
+   if(document.getElementById('content-pwd').value.length<6){
+    alert('密码不能少于六位');
+       return false;
+   }
+
+var pwd=document.getElementById('content-pwd').value;
+var repwd=document.getElementById('content-repwd').value;
+
+if(pwd!=repwd){
+
+alert('两次输入的密码不一致')
+
+return false;
+
+}
+   return true;
+
+    }
+
+	</script>
+</head>
+<body>
+
+
+<div class="contain"  style="margin-top:-40px;" >
+    <div class="con">
+        <div class="main">
+            <div class="right_msg">
+                <div class="right">
+                    <div class="right_text"><i></i><span>没有最好，只有更好</span><i></i></div>
+                    <ul>
+                        <li>
+                            <i class="loginIcon1"></i>
+                            <span>&nbsp;个性化</span>
+                        </li>
+                        <li>
+                            <i class="loginIcon2"></i>
+                            <span>&nbsp;品质化</span>
+                        </li>
+                        <li class="nomargin">
+                            <i class="loginIcon3"></i>
+                            <span>&nbsp;高端化</span>
+                        </li>
+                    </ul>
+                </div>
+                
+    <div class="tab cut ">
+        <div class="list">
+            <h2 class="list_left">登录加粉后台管理系统</h2>
+<!--
+            <span class="list_right"><a href="">立即注册</a></span>
+            <span class="list_text">还没有花镇账号？</span>
+-->
+
+        </div>
+
+     <!--   <form class="loginForm"  style="border:1px solid red;" >-->
+
+
+<form action="" method="POST" enctype="multipart/form-data" onsubmit="return test()"; >
+
+
+
+            <div class="form-group loginForm">
+                <div class="input-group">
+                    <i></i>
+                    <input type="text" placeholder="用户名" class="form-control" id="content-name" name="mbername" />
+                </div>
+
+            <!--    <div class="input-group register">
+                    <i></i>
+                    <input type="text" placeholder="手机号" class="form-control"     id="IPhone" name="mberphone"   readonly    onfocus="this.removeAttribute('readonly')"     />
+                </div> -->
+
+                <div class="input-group register">
+                    <i></i>
+                    <input type="password" placeholder="密码" class="form-control"       id="content-pwd" name="mberpwd"   readonly    onfocus="this.removeAttribute('readonly')"     />
+                </div>
+
+                 <div class="input-group register">
+                    <i></i>
+                    <input type="password" placeholder="确认密码" class="form-control"       id="content-repwd"   readonly    onfocus="this.removeAttribute('readonly')"     />
+                </div>
+
+<!--              <div class="login-p"> 
+
+登录类型：
+ <select class="set" name="mansel" id="selectop" >
+
+
+ <option  value="1">我是管理员</option>       
+  
+
+
+
+
+     </select>      </div> -->
+
+
+        <!--
+                <div class="input-group ">
+                    <a href="/reset">忘记密码?</a>
+                </div>
+-->
+
+
+                <div class="input-group">
+                    <input class="btn nomargin" type="submit" value="注册">
+                </div>
+
+<!--
+<div class="content content-btn"><input class="btn" type="submit" name="" value="登录" ></div>
+
+-->
+
+            </div>
+        </form>
+    </div>
+                <img class="yezi" width="96" height="82" title="" alt="" src="http://tgoss.huazhen2008.com/backend/img/images/yezi.png">
+            </div>
+        </div>
+        <div style="clear: both"></div>
+
+    </div>
+   <!-- <div class="footer">
+        <p>
+            <span> Copyright© 2018 OUT OF LOVE All Rights Reserved.</span><br>
+            鄂ICP备18022008号 版权所有：武汉满分爱科技有限公司
+        </p>
+    </div> -->
+</div>
+
+</body>
+</html>

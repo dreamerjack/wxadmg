@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>加粉管理系统</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/index.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.easyui.min.js"></script>
+
+<script>
+function del()
+{
+  if(confirm("确定要删除吗？")) 
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+</script>
+
+</head>
+<body >  
+
+<div class="adduser"><a href="{:U('home/admin/adduser')}">添加管理员</a></div>
+
+	 <form >
+       <table class="tab" cellspacing="0" cellpadding="0" >
+           <thead  >
+               <tr >
+                   <th class="tab-title" width="50">姓名</th>
+                   
+                   <th class="tab-title" >管理员类型</th>
+                    <th class="tab-title"  >最近登录</th>
+                   <th class="tab-title" width="80">操作</th>
+               </tr>
+           </thead>
+           <tbody>
+            <foreach name="adminlist" item="admin">
+               <tr>
+                <td class="tab-title" width="80" >{$admin.username}</td>
+
+                <td class="tab-title" width="120">
+                {$admin.rights}
+
+              </td>
+                <td class="tab-title" width="70">{$admin.logtime|date='Y-m-d',###}</td>
+                <td class="tab-title" width="70"><a href="{:U('Home/admin/adduser_edit',array('admin_id'=>$admin['id']))}">修改</a>&nbsp;&nbsp;&nbsp;<a href="{:U('Home/admin/admin_del',array('admin_id'=>$admin['id']))}"  onclick='return del();'  >删除</a></td>
+               </tr>
+              </foreach>
+           </tbody>
+       </table>	
+       </form>
+</body>  
+</html>
